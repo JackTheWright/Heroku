@@ -1,0 +1,153 @@
+<html>
+
+  <head>
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+      <title> Please kill me </title>
+    
+      <style type="text/css">
+          
+          #classSelector {
+              position: relative;
+              margin:auto;
+              width:50%;
+              padding-left:10px;
+              border-style: solid;
+              border-radius: 5px 15px 5px;
+              border-width:2px;
+              background-color: white;
+              position:sticky;
+              
+          }
+          
+          #raceSelector {
+              position: relative;
+              margin:auto;
+              width:50%;
+              margin-top:25px;
+              padding-left:10px;
+              padding-bottom:15px;
+              border-style: solid;
+              border-radius: 5px 15px 5px;
+              border-width:2px;
+              background-color: white;
+              position:sticky;
+          }
+          
+          #nameSelector {
+              position: relative;
+              margin:auto;
+              width:50%;
+              margin-bottom:25px;
+              padding-left:10px;
+              border-style: solid;
+              border-radius: 5px 15px 5px;
+              border-width:2px;
+              background-color: white;
+              position:sticky;
+          }
+          #bg {
+              background-image: url(BigDragon.jpg);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-color: azure;
+          }
+          
+          #h {
+              position: relative;
+              text-align: center;
+              margin:auto;
+              margin-bottom:25px;
+              width:50%;
+              border-style: solid;
+              background-color: white;
+              border-width:2px;
+              padding:10px;
+              position:sticky;
+              
+          }
+          #sub {
+              position: relative;
+              margin: auto;
+              margin-top:25px;
+              padding-left: 35%;
+              align-items: center;
+              width:50%;
+              position:sticky;
+          }
+          
+
+          #bigbox {
+              font-family: 'Josefin Sans', sans-serif;
+              
+          }
+          
+          #bg2 {
+              position: absolute;
+              top:2px;
+              left:17%;
+              width:65%;
+              height:91%;
+              border-style: solid;
+              background-color:aliceblue;
+              margin: auto;
+              z-index:-1;
+              opacity: .75;
+              
+          }
+
+      </style>
+
+  </head>
+
+  <body id="bg">
+      <form>
+          <div id="bigbox">
+              <h2 id="h">Enter Your Hero Details!</h2>
+
+            <div id="nameSelector">
+
+                <p>Character Name: <input type="text" placeholder="Hero Name Goes Here"></p>
+                <p>Player controlled? <input type="checkbox" checked> </p>
+
+            </div>
+
+            <div id="classSelector">
+
+              <h4>Class:</h4>
+                  <p> Paladin   <input type="radio" name ="class" value="cls"> </p>
+                  <p> Wizard    <input type="radio" name="class" value="cls"> </p>
+                  <p> Fighter   <input type="radio" name="class" value="cls"> </p>
+                  <p> Bard      <input type="radio" name="class" value="cls"> </p>
+                  <p> Rogue     <input type="radio" name="class" value="cls"> </p>
+                  <p> Ranger    <input type="radio" name="class" value="cls"> </p>
+                  <p> Monk      <input type="radio" name="class" value="cls"> </p>
+                  <p> Druid    <input type="radio" name="class" value="cls"> </p>
+
+            </div>
+        <!--can use span for one portion of a text-->
+
+             <div id="raceSelector"><h4> Race:</h4>
+
+                <select>
+
+                    <option>Human</option>
+                    <option>Elf</option>
+                    <option>Dwarf</option>
+                    <option>Orc</option>
+                    <option>Gnome</option>
+                    <option>Dragonborn</option>
+                    <option>Tiefling</option>
+
+
+
+
+                </select>
+              </div>
+            <div id="sub"><input type="submit" value="Enter Your Hero!"></div>
+        </div>
+          <div id="bg2"></div>
+      </form>
+  </body>
+
+</html>

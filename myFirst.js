@@ -1,7 +1,15 @@
-var http = require('http');
+var http = require('http'),
+    fs = require('fs');
 
-http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.end('Hello World!');
-}).listen(process.env.PORT || 5000)
+
+fs.readFile('./addhero.html', function (err, html) {
+    if (err) {
+        throw err;
+    }
+    http.createServer(function(request, response) {
+        response.writeHeader(200, {"Content-Type": "text/html"});
+        response.write(html);
+        response.end();
+    }).listen(process.env.PORT || 5000)
+  });
 console.log("Running");
