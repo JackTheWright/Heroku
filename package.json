@@ -4,7 +4,7 @@
   "description": "",
   "main": "myFirst.js",
   "scripts": {
-   "start": "myFirst.js"
+   "start": "node myFirst.js"
     },
   "repository": {
     "type": "git",
