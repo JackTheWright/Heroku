@@ -2,7 +2,7 @@ var http = require('http'),
     fs = require('fs');
 
 
-fs.readFile('ajwbmainsite.html', function (err, html) {
+fs.readFile('AJWBMainSite.html', function (err, html) {
 
     if (err) throw err;
 
